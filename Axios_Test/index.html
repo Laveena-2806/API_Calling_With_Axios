@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Axios Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Axios Demo</h1>
+
+        <div class="jumbotron">
+            <h1 class="text-dark">Welcome to Axios</h1>
+            <h4>This application uses Axios.Axios is a promise-based HTTP client for Javascript.</h4>
+        </div>
+        <div class="panel panel-primary border p-2">
+            <div class="panel-heading bg-primary p-2 m-2">GET Request</div>
+            <div class="panel-body p-2">
+                <button class="btn btn-primary" onclick="performGetRequest1()">Get Todos</button>
+                <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="panel-body" id="getResult1"></div>
+            </div>
+        </div>
+
+        <div class="panel panel-primary border p-2">
+            <div class="panel-heading bg-primary p-2 m-2">GET Request With parameters</div>
+            <div class="panel-body p-2">
+                <input type="text" class="form-control" id="todoId" placeholder="Todo ID..."><br>
+                <button class="btn btn-primary" onclick="performGetRequest2()">Get Todos</button>
+                <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="panel-body" id="getResult2"></div>
+            </div>
+        </div>
+
+        <div class="panel panel-primary border p-2">
+            <div class="panel-heading bg-primary p-2 m-2">POST Request</div>
+            <div class="panel-body p-2">
+                <form action="#" id="todoInputForm" class="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form><br>
+                <button class=" btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="panel-body" id="postRequest"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
